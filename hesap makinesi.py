@@ -11,7 +11,8 @@ print("[Q] Uygulamayı kapat")
 print()
 print("*"*30)
 
-giris = input("Lütfen 7 işlemden birini seçiniz: ")
+#input komutu ile başlangıçta belirttiğimiz rakamlardan birini seçmesini istiyoruz.
+giris = input("Lütfen 7 işlemden birini seçiniz: ") 
 while True:
 	if giris =="1":
 		print("\nToplama işlemi seçildi")
@@ -22,6 +23,7 @@ while True:
 		print("İşlem sonucu: ", x + y , "\n")
 		continue
 		time.sleep(5)
+#Hesap makinesini kullanacak kişiler ondalıklı sayı (3,14) kullanmak isteyebilir. Bu yüzden değişkenlerimizi float olarak belirliyoruz.
 
 	elif giris =="2":
 		print("\n Çıkarma işlemi seçildi")
